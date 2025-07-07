@@ -1,3 +1,5 @@
+import sys, os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -5,6 +7,7 @@ from sklearn.metrics import mean_squared_error
 from typing import Tuple, List, Optional
 
 from utils.plotter import FloatArray
+
 
 class PolynomialFitter:
     """
